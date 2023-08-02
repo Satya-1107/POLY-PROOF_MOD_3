@@ -22,6 +22,12 @@ const config: HardhatUserConfig = {
       }
     ]
   },
+  networks: {
+    mumbai: {
+      url: `https://rpc-mumbai.maticvigil.com/`,
+      accounts: ['5267458dc7384fbd1d4bc0a9a63bfc06527188e6d845ca0e63e83f8ff75db550']
+    }
+  },
   circom: {
     // (optional) Base path for input files, defaults to `./circuits/`
     inputBasePath: "./circuits",
